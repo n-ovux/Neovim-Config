@@ -1,47 +1,53 @@
 -- PACKAGES
--- LOCATION: .local/share/nvim/site/pack/packer/start/
 
 -- IMPATIENT
 require('impatient')
 
+-- INSTALL PACKAGES
 require('packer').startup(function()
-	-- COSMETIC
-	use 'wbthomason/packer.nvim'
+	-- CORE
+	use 'wbthomason/packer.nvim' -- Package Manager
+	use 'lewis6991/impatient.nvim' -- Speeds up lua
+
+	-- GIT
+	use 'mhinz/vim-signify' -- Shows git signs
+	use 'tpope/vim-fugitive' -- Adds git command in nvim
+	use 'junegunn/gv.vim' -- Adds support for browsing commits
+
+	-- COMPLETION/LSP
+	use 'hrsh7th/nvim-cmp' -- Completions
+	use 'hrsh7th/cmp-buffer' -- Completions in the buffer
+	use 'hrsh7th/cmp-path' -- Completions in the path
+	use 'hrsh7th/cmp-cmdline' -- Completions in the terminal
+	use 'saadparwaiz1/cmp_luasnip' -- Completions with snippets
+	use 'hrsh7th/cmp-nvim-lsp' -- Completions with LSP
+	use 'L3MON4D3/LuaSnip' -- Adds snippet engine
+	use 'rafamadriz/friendly-snippets' -- Snippets for many langauges
+	use 'neovim/nvim-lspconfig' -- Configures LSP
+	use 'williamboman/nvim-lsp-installer' -- A tool for install lsp servers
+
+	-- ICONS
+	use 'ryanoasis/vim-devicons' -- Adds icons to the font
+	use 'kyazdani42/nvim-web-devicons' -- Adds icons to the font
+
+	-- NAVITGATION
+	use 'nvim-telescope/telescope.nvim' -- Adds fuzzy finding for files
+	use 'kevinhwang91/rnvimr' -- Adds the ranger file manager
+
+	-- HIGHLIGHTING
+	use 'norcalli/nvim-colorizer.lua' -- Adds color to hex, rgb, etc codes
+	use 'rafi/awesome-vim-colorschemes' -- Adds many colorschemes
+	use 'nvim-treesitter/nvim-treesitter' -- Adds syntax highlighting
+	use 'JoosepAlviste/nvim-ts-context-commentstring' -- Makes better comments
+
+	-- EXTRA
+	use 'andweeb/presence.nvim' -- Adds Discord presence
+	use 'nvim-lualine/lualine.nvim' -- Adds status bar
+	use 'tpope/vim-surround' -- Adds bracket highlighting
+	use 'mhinz/vim-startify' -- Adds a start pages
+
+	-- LIBS
 	use 'nvim-lua/plenary.nvim'
-	use 'norcalli/nvim-colorizer.lua'
-	use 'rafi/awesome-vim-colorschemes'
-	use 'ryanoasis/vim-devicons'
-	use 'kyazdani42/nvim-web-devicons'
-	use 'hrsh7th/nvim-compe'
-	use 'nvim-telescope/telescope.nvim'
-	use 'nvim-treesitter/nvim-treesitter'
-	use 'andweeb/presence.nvim'
-	use 'kevinhwang91/rnvimr'
-	use 'JoosepAlviste/nvim-ts-context-commentstring'
-
-	use 'nvim-lualine/lualine.nvim'
-
-	use 'hrsh7th/nvim-cmp'
-	use 'hrsh7th/cmp-buffer'
-	use 'hrsh7th/cmp-path'
-	use 'hrsh7th/cmp-cmdline'
-	use 'saadparwaiz1/cmp_luasnip'
-	use 'L3MON4D3/LuaSnip'
-	use 'rafamadriz/friendly-snippets'
-
-	-- CODE
-	use 'tpope/vim-surround'
-        use 'mhinz/vim-signify'
-        use 'mhinz/vim-startify'
-        use 'tpope/vim-fugitive'
-        use 'tpope/vim-rhubarb'
-        use 'junegunn/gv.vim'
-
-	use 'neovim/nvim-lspconfig'
-	use 'hrsh7th/cmp-nvim-lsp'
-	use 'williamboman/nvim-lsp-installer'
-	-- LIBRARIES
-	use  'lewis6991/impatient.nvim'
 end)
 
 -- LUALINE
