@@ -44,7 +44,8 @@ require('packer').startup(function()
 	use 'andweeb/presence.nvim' -- Adds Discord presence
 	use 'nvim-lualine/lualine.nvim' -- Adds status bar
 	use 'tpope/vim-surround' -- Adds bracket highlighting
-	use 'mhinz/vim-startify' -- Adds a start pages
+	use 'mhinz/vim-startify' -- Adds a start page
+	use 'iamcco/markdown-preview.nvim' -- Adds markdown preview
 
 	-- LIBS
 	use 'nvim-lua/plenary.nvim'
