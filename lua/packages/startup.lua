@@ -16,7 +16,8 @@ vim.g.startify_lists = {{
 
 vim.g.startify_bookmarks = {
 	{ z = '~/.zshrc' },
-	{ v = '~/.config/nvim'}
+	{ v = '~/.config/nvim'},
+	{ c = '~/Coding' }
     }
 
 vim.g.startify_custom_header = {
