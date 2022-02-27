@@ -25,6 +25,7 @@ require('packer').startup(function()
 	use 'rafamadriz/friendly-snippets' -- Snippets for many langauges
 	use 'neovim/nvim-lspconfig' -- Configures LSP
 	use 'williamboman/nvim-lsp-installer' -- A tool for install lsp servers
+	use 'jiangmiao/auto-pairs'
 
 	-- ICONS
 	use 'ryanoasis/vim-devicons' -- Adds icons to the font
@@ -46,34 +47,46 @@ require('packer').startup(function()
 	use 'tpope/vim-surround' -- Adds bracket highlighting
 	use 'mhinz/vim-startify' -- Adds a start page
 	use 'iamcco/markdown-preview.nvim' -- Adds markdown preview
+	use 'numToStr/Comment.nvim' -- Adds comment line keybind
+	use 'voldikss/vim-floaterm' -- Adds a good terminal inside neovim
+	use 'justinmk/vim-sneak' -- Adds a easy wasy to move around in neovim
 
 	-- LIBS
-	use 'nvim-lua/plenary.nvim'
+	use 'nvim-lua/plenary.nvim' -- Required by telescope
 end)
 
+-- Sneak
+require('packages.sneak')
+
+-- TERMINAL
+require('packages.terminal')
+
+-- COMMENT
+require('packages.comment')
+
 -- LUALINE
-require("packages/lualine")
+require("packages.lualine")
 
 -- COMPLETION
-require('packages/cmp')
+require('packages.cmp')
 
 -- LSP
-require('packages/lsp')
+require('packages.lsp')
 
 -- FILE MANAGER
-require('packages/ranger')
+require('packages.ranger')
 
 -- COLORS
-require('packages/colorizer')
+require('packages.colorizer')
 
 -- DISCORD
-require('packages/presence')
+require('packages.presence')
 
 -- STARTSCREEN
-require('packages/startup')
+require('packages.startup')
 
 -- GIT
-require('packages/git')
+require('packages.git')
 
 -- TREESITTER
-require("packages/treesitter")
+require("packages.treesitter")
