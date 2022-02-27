@@ -40,6 +40,7 @@ require('packer').startup(function()
 	use 'rafi/awesome-vim-colorschemes' -- Adds many colorschemes
 	use 'nvim-treesitter/nvim-treesitter' -- Adds syntax highlighting
 	use 'JoosepAlviste/nvim-ts-context-commentstring' -- Makes better comments
+	use 'lukas-reineke/indent-blankline.nvim' -- Adds indentation line
 
 	-- EXTRA
 	use 'andweeb/presence.nvim' -- Adds Discord presence
@@ -49,14 +50,13 @@ require('packer').startup(function()
 	use 'iamcco/markdown-preview.nvim' -- Adds markdown preview
 	use 'numToStr/Comment.nvim' -- Adds comment line keybind
 	use 'voldikss/vim-floaterm' -- Adds a good terminal inside neovim
-	use 'justinmk/vim-sneak' -- Adds a easy wasy to move around in neovim
-
+	
 	-- LIBS
 	use 'nvim-lua/plenary.nvim' -- Required by telescope
 end)
 
--- Sneak
-require('packages.sneak')
+-- INDENTATION
+require('packages.indent')
 
 -- TERMINAL
 require('packages.terminal')
