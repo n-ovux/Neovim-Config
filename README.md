@@ -15,7 +15,7 @@ paru -S neovim-nightly-bin
 ### Dependencies
 To install the dependencies from the aur you can do the following command:
 ```bash
-paru -S xclip nodejs packer lua ranger python3 stylua rustup eslint autopep8 fixfson
+paru -S xclip nodejs packer lua ranger python3 stylua rustup eslint autopep8 fixjson
 ```
 
 ### Saving Old Config
