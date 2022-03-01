@@ -25,7 +25,7 @@ require("packer").startup(function()
 	use("rafamadriz/friendly-snippets") -- Snippets for many langauges
 	use("neovim/nvim-lspconfig") -- Configures LSP
 	use("williamboman/nvim-lsp-installer") -- A tool for install lsp servers
-	use("jiangmiao/auto-pairs")
+	use("jiangmiao/auto-pairs") -- Automatically adds pair ex. "", '', (), etc.
 	use("jose-elias-alvarez/null-ls.nvim") -- Adds Formating
 
 	-- ICONS
@@ -35,6 +35,7 @@ require("packer").startup(function()
 	-- NAVITGATION
 	use("nvim-telescope/telescope.nvim") -- Adds fuzzy finding for files
 	use("kevinhwang91/rnvimr") -- Adds the ranger file manager
+	use("preservim/tagbar") -- Adds the ability to switch between tags
 
 	-- HIGHLIGHTING
 	use("norcalli/nvim-colorizer.lua") -- Adds color to hex, rgb, etc codes

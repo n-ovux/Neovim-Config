@@ -23,6 +23,7 @@ vim.g.startify_bookmarks = {
 	{ z = "~/.zshrc" },
 	{ v = "~/.config/nvim" },
 	{ c = "~/Coding" },
+	{ r = "~" },
 }
 
 vim.g.startify_custom_header = {
