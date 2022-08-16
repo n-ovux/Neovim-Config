@@ -1,3 +1,5 @@
+# MOVE TO https://codeberg.org/wolfdesroyer/nvim-conf
+
 # Neovim Config
 
 ## Preview
